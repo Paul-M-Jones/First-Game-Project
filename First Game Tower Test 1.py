@@ -12,10 +12,10 @@ pygame.display.set_caption("Protect Princess Kotone")
 # Colours
 WHITE = (255, 255, 255)
 DARK_GREY = (50, 50, 50)
-RED = (200, 0, 0)
+RED = (255, 105, 180)
 
 # Tower settings
-TOWER_RADIUS = 30
+TOWER_RADIUS = 50
 TOWER_POS = (WIDTH // 2, HEIGHT // 2)
 
 # Clock
@@ -28,7 +28,7 @@ while running:
     WIN.fill(WHITE)
 
     # Draw central tower
-    pygame.draw.circle(WIN, DARK_GREY, TOWER_POS, TOWER_RADIUS)
+    pygame.draw.circle(WIN, RED, TOWER_POS, TOWER_RADIUS)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
